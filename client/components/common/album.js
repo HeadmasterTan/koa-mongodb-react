@@ -55,6 +55,10 @@ class Album extends React.Component {
                 collected: true
             }]
         };
+
+        axios.get('http://172.28.194.47:8088/api/good/getGoods').then(res=>{
+            console.log(res);
+        })
     }
 
     render() {
